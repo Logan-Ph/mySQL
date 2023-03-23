@@ -1,0 +1,28 @@
+Q1)
+b) pi_ITEM (sigma_client = Cila(SALE))
+c) pi_staff (sigma_SDate = "1998311"(SALE))
+d) pi_type (sigma_Numstock = 0(Stock))
+e) pi_type(item) - pi_item(sale)
+f) (pi_name(sigma_position=Clerk(STAFF)) - pi_staff(sale))
+g) pi_position(Staff (staff.name = sale.name) join SALE)
+h) sigma_numstock=0(STOCK stock.type = sale.item join SALE)
+
+Q2)
+a) what is the price of the item k3
+b) what is the name of the clients have made sale after (1/1/1998)
+c) what is the descrip of the item k3
+d) which position of the staff name which made sale of the item K11
+e) what is the name of the staff which made sale of the client which adress of the client is Kent(st)
+and the item descrip is Ladle
+f) the same with e
+g) what is the descrip of the item which is not in the stock
+
+Q3)
+q4)
+b) the item must have the type
+c) each staff only have 1 position
+d) the column Staff of SALE will contain nulls values which contradict to the constraint (all columns must be not null)
+e) all staff have 1 position
+f) duplicate value
+g) each client must have the adress
+h) no violation here
